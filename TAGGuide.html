@@ -1,0 +1,992 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="content-type" content="text/html" />
+<title>Participation guide for TAG Members</title>
+
+<style type="text/css">
+
+
+/*********************************************************
+ *     Front matter styles
+ *********************************************************/
+
+ div.frontmatter {
+                 text-align: center;
+                 margin-bottom: 1.0cm;
+		 margin-top: 1cm;
+		 margin-right: -2%;
+}
+
+p.authors     {font-size:105%; margin-top:1em; margin-bottom:.2em;}
+
+/* H1 is used for document title */
+
+h1	     {color: #00008B;
+              font-weight: bold;
+              font-size: 160%;
+	      margin-bottom: .25cm;}
+	      
+/*********************************************************
+ * Styles for main body of the text
+ * including section headings, etc.
+ *********************************************************/
+
+body        {margin-left: 0%;
+             margin-right: 0%;
+             font-family:arial, helvetica, sans-serif;
+
+	     font-size:90%;
+	     }
+
+/* h3 is sub-section header */
+h3          {color: black;
+             font-weight: bold;
+	     font-style: italic;
+             font-size: 100%;
+             margin-left: 3%;
+             margin-top: .5cm;
+             margin-bottom: -.25em}
+
+
+p           {margin-left: 3%;
+	     margin-right: 3%;
+             margin-top: .75em; 
+             margin-bottom: .75em;
+}
+
+dl,table    {margin-left:10%;
+             margin-right:10%;
+            }
+
+table       {border-collapse:collapse;
+             table-layout:fixed;}
+th,td	    {border-style:solid; border-width:thin;}
+
+table td a  {font-size:80%;}
+dt	    {
+             padding-top:.5em;
+            }
+
+dd	    {
+             padding-top:.75em;
+            }
+
+ul,ol       {margin-left: 3%;
+             margin-right: 5%;
+             margin-top: .75em; 
+             margin-bottom: .75em}
+
+li          {page-break-inside: avoid;
+             margin-top:.5em;
+}
+
+ul ul    {margin-left:0}
+ul ul li    {padding-left:1%}
+
+p.quote     {font-size: 90%;
+             margin-left: 5%;
+	     margin-right: 3%;}
+
+span.definedItem {font-weight: bold}
+
+@media print {
+    body { font-size: 9pt }
+  }
+
+@media screen {
+/*    body { font-size: 10pt } */
+  }
+
+
+/*********************************************************
+ * Table of Contents
+ *********************************************************/
+
+/* div.toc     {background: #F3F3F3;
+             border:solid;
+             border-width: 2px;
+             margin-left: 5%;
+             margin-right: 5%;
+	     margin-top:2cm;
+	     margin-bottom:1cm;
+	     padding-bottom:2em;
+	     page-break-inside: avoid;} */
+
+p.contentItem  {margin-top: .5em; margin-left:3%;  margin-bottom: 0em;
+
+
+                font-weight:bold;}
+p.contentItem2 {margin-left:4%; margin-top: .15em; margin-bottom:0em}
+
+/* h2 is main section header */
+h2, h2.contentHeader           {color: #00008B;
+             font-size: 100%;
+             margin-left: 1%;
+             margin-top: .5cm;
+             margin-bottom: -.25em}
+
+h2.contentHeader {
+            margin-bottom: .25em
+}
+
+/*
+ * Misc styling for examples - may not get used
+ */
+.code           { font-family: monospace; }
+
+.em 	    { font-style: italic; }
+.pre    	    {font-family: monospace;
+	     font-size: 120%;
+	     margin-left: 5%}
+.needswork   {color : red}
+</style>
+</head>
+
+<body>
+<div class="frontmatter">
+<h1>An Informal Guide to Participation in
+<br />
+ the W3C Technical Architecture Group (TAG)</h1>
+<p class="authors">
+Noah Mendelsohn (IBM) - TAG Co-chair
+<br/>
+14 April 2009
+</p>
+<p class="authors">
+This document is W3C member-only.
+</p>
+<p>Latest version: <a href="http://www.w3.org/2001/tag/coordination/TAGGuide.html">http://www.w3.org/2001/tag/coordination/TAGGuide.html</a>
+</p>
+</div>
+
+<h2 id="abstract">Abstract and status</h2>
+<p>These are notes on the way the TAG does its work.
+They are informal, and are intended primarily for reference by current members of the TAG, and especially for new members.
+</p>
+<p>
+I expect to update this document, at least during the coming year,
+to reflect our agreements on how we're doing our work.
+Neither I as chair nor the W3C staff makes any commitment to maintain this document in
+the long term, except that an effort will be made to indicate explicitly 
+herein whether
+maintenance has been abandoned.
+Any opinions contained herein are those of the author, and do not
+necessarily (yet) represent consensus of other TAG members. 
+At its face-to-face meeting of 3 March 2009, TAG members
+<a href="http://www.w3.org/2001/tag/2009/03/03-tagmem-minutes.html#item08">expressed informal agreement to use this document as a guide to TAG operations</a> (scribed somewhat vaguely as agreement to "work with what is written").</p>
+
+<div class="toc">
+<h2 id="contents" class="contentHeader"><span class="contentHeader">Table of Contents</span></h2>
+
+<p class="contentItem"><a href="#basics">The Basics</a></p>
+<p class="contentItem2"><a href="#scopeCharter">TAG Charter and Scope</a></p>
+<p class="contentItem2"><a href="#otherinfo">Other sources of information</a></p>
+<p class="contentItem"><a href="#goals">Goals and measures of success for the TAG</a></p>
+<p class="contentItem"><a href="#communications">Meetings and communications</a></p>
+<p class="contentItem2"><a href="#telcon">Teleconferences</a></p>
+<p class="contentItem2"><a href="#IRC">IRC</a></p>
+<p class="contentItem2"><a href="#agendas">Meeting agendas</a></p>
+<p class="contentItem2"><a href="#meetingPrep">Preparing for and participating in document reviews</a></p>
+<p class="contentItem2"><a href="#scribing">Scribing and minutes</a></p>
+<p class="contentItem2"><a href="#private">Protecting private information</a></p>
+<p class="contentItem2"><a href="#cvs">Publishing information using CVS</a></p>
+<p class="contentItem"><a href="#workproduct">What the TAG produces</a></p>
+<p class="contentItem2"><a href="#AWWW">The Architecture Document</a></p>
+<p class="contentItem2"><a href="#findings">TAG Findings</a></p>
+<p class="contentItem2"><a href="#editors">The role of the editor</a></p>
+<p class="contentItem2"><a href="#newfindings">Deciding which findings to produce</a></p>
+<p class="contentItem2"><a href="#findingpublish">The mechanics of publishing a finding</a></p>
+<p class="contentItem"><a href="#managing">Managing the TAG's work</a></p>
+<p class="contentItem2"><a href="#chair">The chairs and staff contact</a></p>
+<p class="contentItem2"><a href="#issuesactions">TAG Issues, Actions and Products</a></p>
+<p class="contentItem2"><a href="#tracker">Automated use of Tracker</a></p>
+<p class="contentItem2"><a href="#products">TAG Products: Managing long term work and ongoing discussions</a></p>
+<p class="contentItem"><a href="#plannedchanges">Changes planned for future versions of this document</a></p>
+
+
+</div>
+
+<h2 id="basics">The Basics</h2>
+<h3 id="scopeCharter">TAG Charter, Scope and Goals</h3>
+<p>
+All TAG members should be familiar with the <a href="http://www.w3.org/2004/10/27-tag-charter.html">Technical Architecture Group (TAG) Charter</a>,
+and with pertinent sections of the <a href="http://www.w3.org/2004/02/Process-20040205/">W3C Process Document</a>.
+</p>
+<p>
+Please alert the TAG chair if any guidlines in these notes appear to contradict the official rules contained in the charter and process documents.
+Note that, from the charter: "The TAG's scope is limited to technical issues about Web architecture. The TAG should not consider administrative, process, or organizational policy issues of W3C, which are generally addressed by the W3C Advisory Committee, Advisory Board, and Team.".
+</p>
+<p>
+TAG members are elected or appointed not to represent their individual
+member organizations, but the Web community as a whole.
+We try to take that responsibility very seriously.
+</p>
+<h3 id="otherinfo">Other sources of information</h3>
+<p>
+A wealth of useful information on logistics of running and participating
+in a group, organizing meetings, scribing, using W3C tools like Tracker, etc. can also be found in
+<a href="http://www.w3.org/Guide/">The Art of Consensus</a>, which is an informal
+guide maintained by the W3C staff.
+</p>
+<h2 id="goals">Goals and measures of success for the TAG</h2>
+<p>
+Setting detailed goals and work focus for the TAG is an ongoing process.
+The TAG has, in the past, chosen to make contributions in a variety of ways.
+These include, but are not necessarily limited to:
+</p>
+<ul>
+<li>Helping groups (inside or outside W3C) who are preparing specifications or using the Web
+to resolve detailed technical issues relating to the Web's mechanisms.
+These activities can be initiated by TAG members who raise a concern
+to the TAG, or by others who approach the TAG (typically by sending
+email to <a href="mailto:www-tag@w3.org">www-tag@w3.org</a> but sometimes
+through other means as well).
+The TAG also responds to technical questions raised by the W3C team, etc.
+Sometimes, Tim in his role as the director solicits guidance from the TAG,
+formally or informally (the TAG charter calls out advising the director
+as one of the roles of the TAG).</li>
+<li>Educating those who create content and applications for the Web, those
+who administer systems for the Web (e.g. Internet service providers),
+and ordinary users, on how to use the Web well.</li>
+<li>Identifying and responding to threats to the Web's success, for
+example, the emergence of technologies that are competitive
+with or not suitably
+integrated with the Web.</li>
+<li>Serving as a high level point of contact for outside organizations
+that need to work with W3C on technical matters.</li>
+</ul>
+<p>
+As noted above, balancing these goals, agreeing which audiences our
+publications should focus on, etc. is an ongoing process.
+These are questions we discuss from time to time, and especially when membership in the TAG changes, and there are by now some years of TAG history.
+To a significant degree, we have found that the TAG is most effective
+when it focuses
+on things that its current membership is well equipped to do.
+</p>
+<h2 id="communications">Meetings and communications</h2>
+<p>
+By charter, the TAG does its work in public to the extent possible.
+Not only does the TAG hold most of even its internal discussions
+on public mailing lists and on fully public Web pages, the TAG welcomes and responds to input and requests
+not just from W3C members, but from anyone in the Web community.  
+In practice, this means that the TAG can get input from almost anyone, and we make a serious effort to be responsive.
+New members may find that this is one of the challenging aspects of working on the TAG: our email lists,
+our meeting minutes, and our findings are reviewed and commented on by
+a very large community, with very diverse experiences and interests.
+Overall, being a part of this large community tends to greatly improve the quality of our technical work, but it means we have to be
+careful to communicate not only clearly, but efficiently, and we need
+to be understanding of and sympathetic to the needs and sensibilities
+of the very broad community that we serve.
+</p>
+
+<h3 id="mailinglists">Mailing lists</h3>
+<p>
+The TAG tries wherenever practical to conduct its business on the TAG public mailing list: <a href="mailto:www-tag@w3.org">www-tag@w3.org</a> 
+(<a href="http://lists.w3.org/Archives/Public/www-tag/">archives</a>).
+Indeed, when other communities ask to work with the TAG, we strongly encourage them to do the shared work on the TAG's list.  While it's a good thing
+that many individual TAG members choose to follow many other mailing lists,
+it would be a burden to ask the TAG as a whole to follow 
+the many other lists that touch on areas of concern to us.
+Accordingly, we strongly encourage other communities to
+hold discussions with us on www-tag.
+For the most part, cross-posting to multiple lists is discouraged, 
+and is particularly problematic if those other lists are not fully
+public.
+Nonetheless, there are occasions where it has proven useful to
+cross post discussions to www-tag and to other public lists.
+</p>
+<p>
+www-tag has a very wide readership, and covers a broad range of topics.
+So, for the list to be effective, it's
+important that discussions be kept reasonably well focused,
+that redundancy and flame wars be avoided where possible, etc.
+TAG members can be helpful by setting a good example in their own use
+of the list,
+and by helping to focus discussion where appropriate.
+</p>
+<p>
+The TAG also maintains a W3C Member-only mailing list at <a href="mailto:tag@w3.org">tag@w3.org</a>
+(<a href="http://lists.w3.org/Archives/Member/tag/">archives</a>).
+By custom, the only subscribers are members of the TAG, but
+it's important to note that the archives are online and available
+to all W3C members.
+The TAG's member-only list tends to be used for at least three purposes:
+1) for logistics planning that's not likely to be of interest to
+non-TAG members; 2) for technical discussion of other groups'
+member-confidential materials; 3) in rare cases where the TAG
+wants to do a bit of coordination among themselves before taking
+positions in public.
+A common example of (3) is when the TAG is preparing a formal
+email response to some other group, the member-only list is
+often used to get concurrence that the draft email accurately
+represents the TAG's position.
+</p>
+<h3 id="telcon">Teleconferences</h3>
+<p>The TAG customarily holds a 90 minute teleconference each week.  The time is renegotiated occasionally, usually after elections,
+to best meet the needs of members.  Information about scribing and agendas is given below.
+Customarily, newly elected TAG members are invited to join teleconferences even before their terms officially begin.
+There is a standing Zakim bridge reservation for the weekly teleconference;  the chair is responsible for increasing the number of
+slots when visitors are expected.  Requests for such changes can be sent to <a href="mailto:adminreq@w3.org">adminreq@w3.org</a>.
+The TAG makes some effort to restrict distribution of the Zakim code for the teleconferences, as there have been occasional instances
+of uninvited callers attempting to lurk on our teleconferences.
+</p>
+
+<h3 id="IRC">IRC</h3>
+<p>The TAG uses IRC channel #tagmem on the usual W3C IRC server.  The channel is used for realtime scribing of meetings and telcons (see below), and for more informal communication among TAG members at other times.
+Use of the channel is normally restricted to TAG members, and to those whom we invite at particular times.</p>
+
+<h3 id="agendas">Meeting agendas</h3>
+<p>
+The chair will assemble an agenda for each teleconference and publish
+it for review by the TAG and the community, typically no later than
+two days before the call.
+Assembly of F2F agendas is typically a more gradual process, with
+rough versions posted well in advance, and some explicit discussion
+by the working group as detailed are settled.
+</p>
+<p>
+Agendas are by convention published in duplicate at: <a href="http://www.w3.org/2001/tag/tag-weekly">http://www.w3.org/2001/tag/tag-weekly</a> and at
+http://www.w3.org/2001/tag/YYYY/MM/xx-agenda (example: <a href="http://www.w3.org/2001/tag/2009/01/15-agenda.html">http://www.w3.org/2001/tag/2009/01/15-agenda</a>)
+(The actual file is checked in with a .html extension, but the W3C .htaccess
+file supports access without the extension.)
+Except while agendas are under development, the copies at the two URIs are typically byte-for-byte identical; <a href="http://www.w3.org/2001/tag/tag-weekly">http://www.w3.org/2001/tag/tag-weekly</a> is a useful bookmark to get the most current agenda.
+</p>
+<p>
+By the way, Many involved with the TAG are confused by the appearance of "2001" as well as the current year in the URIs &#8212; as it turns out, the TAG's little corner of URI space was allocated by W3C in 2001, so all of its URIs contain that year.  Within that, some URIs are dated with the current year as a path segment, and some are not.
+Final versions of each agenda are emailed by the chair in text form to www-tag;  this is useful especially to those
+who use screen readers, or who read their email offline.
+It also makes it possible to search agenda by using the search tools available for the www-tag archives.</p>
+
+<h3 id="meetingPrep">Preparing for and participating in document reviews</h3>
+<p>
+Face to face meetings represent a significant investment of time and
+money, and we often spend a lot of our face-to-face time (and sometimes
+telcon time as well) reviewing draft documents.
+Doing a good job of advance preparation obviously
+tends to make our time together more productive.
+Furthermore, we tend to make mistakes when reviews are done on
+materials that haven't been read carefully in advance.
+</p>
+<p>
+For these reasons, the chair plans to put more emphasis in 2009 on
+ensuring that materials are available sufficiently far in advance
+that members have an opportunity to read them, and that those
+who do participate in reviews are familiar in detail with the materials
+being evaluated.
+In particular, we will attempt to have final review
+drafts of all but the very shortest documents
+available no less than one week in advance of face-to-face discussion.
+When documents or new sections to be reviewed are longer than a few
+pages (in reasonable fonts, and at the ultimate discretion of the chair)
+we will insist on more advance notice.
+</p>
+<p>
+Furthermore, we will experiment during our reviews with 
+giving priority to those
+who have read the pertinent materials in detail, and who
+have familiarized themselves with related commentary (e.g., email) from others.
+So, the chair may sometimes decline to allow
+active review participation from those
+who have not read in detail the materials they are reviewing, or the
+chair may suggest that those who haven't prepared withhold comments until
+others have been heard from.
+</p>
+<p>
+Finally, the TAG seems in past years to have wound up repeatedly reviewing
+the same sections of certain draft documents, even after tentative consensus
+has been reached on their contents.
+Accordingly, we may try this year to experiment with marking certain
+sections as "agreed" (or some such) as reviews progress.
+Asking to reopen consideration of such sections is always in order,
+but at least we should do so consciously, and preferably based on 
+new information or new insights.
+</p>
+<h3 id="scribing">Scribing and Minutes</h3>
+<p>
+Our minutes are one of the most important ways that we communicate
+with the community we serve.
+Minutes are assigned URIs (see below) and are world-readable, so
+anyone inside or outside W3C has access, and once approved by
+the TAG are announced on the www-tag mailing list.
+</p>
+<p>
+Many people review our minutes in detail, and many groups monitor
+our minutes to see whether the TAG is working in areas of concern to them.
+Accordingly, it is important that our scribing be done carefully, and
+that the results be reasonably clear.  In particular:
+</p>
+<ul>
+<li>Readers from the TAG must be able to use the minutes to remind themselves
+of what we discussed, and why we made various decisions.  
+Where external materials are discussed, they should be clearly hyperlinked fromthe minutes.</li>
+<li>Because TAG work on particular issues often extends over a period of years, and because our minutes are widely read by others, it's important
+that minutes be comprehensible to those who were not present at the meeting.</li>
+<li>The minutes should indicate who was present and who was not.</li>
+<li>The minutes should formally record using the standard forms understood by Rrsagent, Tracker and scribe.perl (see below) any formal resolutions of the TAG, newly assigned, rescheduled or closed actions, etc.</li>
+<li>Because we use tracker, it is essential to use forms that tracker will recognize when referencing open issues (ISSUE-XXX) and actions (ACTION-YYY).</li>
+</ul>
+<p>
+All TAG members, with the exception of the chairs, are expected to
+share the load of scribing and preparing formatted versions of
+meeting minutes.
+The chair will designate in advance a scribe for each teleconference.
+Our custom is to assign scribes separately to morning and afternoon
+sessions of face to face meetings.
+</p>
+<p>
+Rough minutes are to be recorded by the scribe in the TAG's IRC session, and
+are to be formatted using <a href="http://dev.w3.org/2002/scribe/scribe.perl">scribe.perl</a>.
+See <a href="http://dev.w3.org/2002/scribe/scribedoc.htm">Generate Meeting Minutes from an IRC Log</a> from the Art of Consensus for hints on setting up the IRC session, how to use markup in the log so the script will understand it, etc.
+</p>
+<p>
+The chair intends to be firm in enforcing a rule that, although scribe.perl (sometimes called "The David Booth Script" or "The Booth Script", since David wrote it) is a terrific tool, <span style="font-style:italic">use of the script or other tools is not generally an excuse for compromising the quality of the minutes</span>.
+In particular, some working group members are tempted by the convenience of typing rough notes into IRC, asking the bot to automatically run the script, and declaring success.
+If you're good enough at typing to get good results that way, then fine, but
+most of us can't do it.
+Accordingly, it's recommended that you capture a copy of the IRC log (using your IRC client or from the copy that's automatically logged on the Web),
+use the script locally to format, and edit the input (I.e. the raw log) and/or the output (the resulting HTML) to produce a result meeting the goals
+outlined above.
+Stir until done.
+</p>
+<p>
+The IRC channel is shared by the scribe and other TAG participants, many of whom will include useful information, corrections, clarifications, links, etc. in their running commentary.
+Scribe.perl shows information recorded by the scribe prominently (typically as black text on white background) and commentary from others is interleaved (grey background).   The official record of the meeting is what is shown as scribed (white background); scribes should use their judgement as to when to duplicate or adapt information recorded by others.
+In general, it is inappropriate to change the text typed by others, as
+your changes would appear to have been typed by them.
+It is useful, though not required, to make limited cosmetic corrections, such as to move such commentary below the heading for the appropriate topic (it's pretty common for helpful TAG members to put in links to information pertinent to a topic just before the scribe gets to put in the "Topic: XXXX" markup that causes scribe.perl to generate a heading.)
+</p>
+<p>
+For teleconferences, the scribe is expected to check in formatted draft minutes
+within two days of the call.
+Please see the important information below on <a href="#cvs">Publishing information using CVS</a> and in particular 
+<span style="font-style:italic">don't forget to set the permissions on the minutes to World Readable</span> (you can do this by using the W3C convention of appending ",access" to the URI of the checked-in document; that will get you a page on which you can set permissions. Be careful, as you only get one shot at this.  If you set the permissions wrong, you'll have to ask a W3C team member to fix them.)
+</p>
+<p>
+The scribe should announce availability of draft minutes on www-tag (I.e. to the world, not just the TAG.)
+Preferred URIs for minutes are of the form http://www.w3.org/2001/tag/YYYY/MM/dd-minutes.html (example: <a href="http://www.w3.org/2001/tag/2009/01/22-minutes.html">http://www.w3.org/2001/tag/2009/01/22-minutes.html</a>).
+Because some widely used tooling tends to generate URIs of the form http://www.w3.org/2001/tag/YYYY/MM/dd-tagmem-minutes.html,
+that is acceptable as well.  So, the formal rule is that names of minutes files must match the regular expression:  "[0-9]+.*minutes.html".
+</p>
+<p>
+We have received a <a href="http://lists.w3.org/Archives/Public/www-tag/2009Feb/0008.html">specific request</a> to also distributed a plain text version of our minutes, and other participants on www-tag have <a href="http://lists.w3.org/Archives/Public/www-archive/2009Feb/0025.html">endorsed</a> this request.
+TAG members who circulate draft minutes are asked to include the text-only version with the announcement email.
+Note that the text version can be prepared by accessing the URL: http://www.w3.org/2001/tag/YYYY/MM/dd-minutes.html,text.
+(Earlier versions of this guide suggested that the chair would provide text versions of final minutes after approval;
+the new procedure facilitates review of draft minutes by those who require text-only formatting.)
+</p>
+<p>
+TAG members are expected to review the draft minutes, and to ask the scribe to
+make updates whenever errors or shortcomings are discovered, and to check those updates in as revisions to the original drafts.
+(text-only copies need be redistributed only when, in the scribe's judgement, its worth the trouble).
+After a brief review period, the chair will call for a formal resolution approving the minutes as a true record of the meeting;  this is typically done on our next teleconference
+or at our next meeting, though slips aren't unheard of.
+Once the minutes are approved, the chair will remove the DRAFT indication from the checked in copy.
+Typically, no separate announcement email is sent at approval time, as approval resolutions are recorded in the minutes
+of the meeting at which approval was agreed.
+TODO:  we used to link all minutes from the TAG home page;  I find it useful but I've received at least one comment that it's not worth
+the trouble.  We'll have to decide.
+</p>
+<p>
+For face to face meetings, our goal is typically to publish an integrated
+page that shows the agenda juxtaposed with links to the pertinent
+sections of the minutes.
+As an added attraction, we customarily include a picture of the TAG
+as well.
+For examples see: <a href="http://www.w3.org/2001/tag/2008/09/f2fkc-agenda">TAG meeting September 23 to 25  in Kansas City</a> and
+<a href="http://www.w3.org/2001/tag/2008/12/09-f2f-agenda">TAG meeting December 9 to 11  in Cambridge, MA</a>.
+For better or worse, our custom is to publish this at the URI originally used for the agenda.
+</p>
+<p>
+Anyway, preparing this integrated page is typically a multistep process:
+</p>
+<ul>
+<li>The chair designates a person, typically different for each day,
+to prepare a clean formatted copy of the minutes for each day that
+we met.
+If you're the designee, then you need to either be sure you have
+raw IRC logs for the parts of the day you didn't scribe, and that they're
+good enough for you to work on, or else you must get the other scribes
+to use scribe.perl to produce a good, integrated HTML page for the
+day that is your responsibility.
+Check this in at a URI like http://www.w3.org/2001/tag/2008/12/10-minutes (minutes for 10 December 2008, which was the 2nd day of a 3 day meeting).
+This step should be completed not later than 3 days after the end of the F2F (with occasional allowances for overseas travel, etc.)  In many cases, the person integrating each day's minutes will have to do some manual cleanup on the HTML, e.g. to build an integrated table of
+contents if multiple formatted .html files are being merged.</li>
+<li>The chair and/or the staff contact take the resulting
+one-html-file-per-day, extract table of content entries, and prepare
+the required integrated minutes for the whole F2F.</li>
+<li>The chair or staff contact announce availability of draft
+minutes on www-tag.</li>
+<li>As with telcon minutes, the draft minutes remain available 
+for review for awhile, typically a couple of weeks, and
+then a formal vote is taken to approve them as a true record. </li>
+</ul>
+
+
+
+<h3 id="private">Protecting private information</h3>
+<p>
+As noted above, IRC logs of meeting minutes and the TAG's 
+so-called private email list are automatically archived on the Web.
+Both of these are often used for planning the logistics of TAG meetings,
+and there is a risk that we would inadvertently disclose information
+that TAG members would prefer to keep private.
+<span style="font-style:italic">Scribes and others using the IRC log are
+responsible for understanding what information TAG members will
+wish to keep private, and for ensuring that it does not wind up
+in the logs</span>.
+Typical examples of information that should be presumed private unless
+the member indicates otherwise include:
+detailed travel information such as flight numbers (it's generally OK
+to record roughly when members will come and go, as that's important
+for planning), phone numbers, names or plans of family members,
+where people live, etc.
+Some members choose to let such information into the record, but that's their
+choice.
+IRC entries in the form of /me XXXX do not wind up in the public minutes, but
+do tend to be visible to others who may stumble onto our channel.
+</p>
+
+<h3 id="cvs">Publishing information using CVS</h3>
+<p>
+In order to fulfill their responsibilities to publish minutes, drafts
+and other documents, TAG members are expected to have (and know how to
+use) CVS access to the subtree rooted at http://www.w3.org/2001/tag.
+Almost all new TAG documents are stored somewhere in this tree.  Ask
+the W3C systems staff, the TAG staff contact, or the chair, if you
+have trouble with this. The following instructions may be helpful in
+establishing W3C CVS access.
+</p>
+<p>
+In order to access the W3C CVS repository, TAG members must use CVS
+SSH remote access, and thus, require an SSH keypair, which may be
+generated and used as described
+in <a href="http://www.w3.org/Project/ssh/ssh-cvs">W3C Notes on
+CVS/SSH setup</a>.
+Users of Unix-like systems should find this process relatively
+straightforward (setting environment variables and so on), but if
+you're using Windows, you may have to do some additional work -
+see <a href="http://www.w3.org/2006/tools/SettingUpSshCvs">Setting up
+cvs/ssh notes</a> for more platform-specific details.
+</p>
+
+<p>
+Once you have setup CVS, you will need to checkout the relevant parts
+of the <a href="http://www.w3.org/Project/CVSdoc/#Main">W3C Main</a>
+repository. For example:
+</p>
+
+<ul>
+  <li>
+  <pre class="example">cvs -d :ext:<var>your-username</var>@cvs.w3.org:/w3ccvs co WWW/2001/tag</pre>
+  (to check out only the TAG-specific portion of the W3C repository,
+  with an inline definition of the CVSROOT following the -d)
+</li>
+</ul>
+
+<p>
+A full guide to CVS usage is beyond the scope of this document, but
+the following commands may be useful:
+</p>
+
+<ul>
+ <li>
+   <pre class="example">cvs update -dP</pre> updates your local copy,
+   pruning deleted directories and adding in remote directories which
+   don't exist locally.
+ </li>
+ <li>
+   <pre class="example">cvs commit -m "informative message describing your changes" file.html</pre> 
+   checks changes made to a local
+   copy of 'file.html' into the repository. 
+ </li>
+</ul>
+
+
+<p>
+Checking information into the appropriate CVS directory
+is not the only step you have to take when publishing information
+on the W3C Web site.
+The first time you add a document at a particular URI, you
+must set the access permissions.
+Indeed, if you don't do that, you your self may not be able to see it.
+If you're diligent, you should also perform some steps like making sure
+that links from the new document resolve.
+</p>
+
+<p>
+The W3C provides some tools to help you do these things.  To get a list of the tools, use a URI with a comma "," at the end.  So, for example, to see tools that work on this document you can use the URI <a href="http://www.w3.org/2001/tag/coordination/TAGGuide.html,">http://www.w3.org/2001/tag/coordination/TAGGuide.html<span style="text-decoration: underline;">,</span></a> (note the comma at the end.)  Specific tools are available with suffixes like <span class="code" style="text-decoration: underline;">,access</span> (set access permissions), <span class="code">,checklink</span> (check for broken links), <span class="code">,validate</span> (make sure HTML is valid), etc.  
+</p>
+<p>
+Most important: when you create a new document <span style="font-style:italic">don't forget to set the permissions using <span class="code">,access</span>!</span>  Also, confusingly, you generally get one shot at this.
+If you set the wrong permissions you'll probably have to get someone on the W3C
+team to straighten it out.
+</p>
+
+<p>
+There are other tricks for using CVS, e.g. using <span class="code">cvs add -kb</span> when posting binary files like .jpgs that aren't suitable for character-based diffing.  Ask an expert.  Also, W3C uses Apache servers that support
+<a href="http://httpd.apache.org/docs/2.2/configuring.html#htaccess">.htaccess</a> files.  In rare cases where your files aren't being served with the right media type or you have UTF encoding problems, you might have to fiddle this.
+Ask an expert.
+</p>
+
+<h2 id="workproduct">What the TAG produces</h2>
+<p>
+In addition to publishing minutes of its meeings, 
+the following are some of the ways that the TAG communicates its
+work to the Web community.
+</p>
+<h3 id="AWWW">The Architecture Document</h3>
+<p>
+The TAG is a W3C working group, and so has the opportunity to
+produce W3C Recommendations.
+So far, the TAG has produced one such Recommendation, the 
+<a href="http://www.w3.org/TR/webarch/">Architecture of the World Wide Web, Volume One</a>, which was published in December, 2004, and is often
+referred to as the AWWW or "The Architecture Document."
+All new TAG members should read this document carefully, as it
+represents the TAG's summary advice to the community on how to use
+and think about the Web.
+The TAG has considered from time to time either producing additional
+"Volumes" of AWWW, presumably to cover new areas such as the Semantic
+Web, and/or revising the existing volume.
+At this time the TAG is not formally working on any such new volumes
+or revisions.
+</p>
+<h3 id="findings">TAG Findings</h3>
+
+<p>
+The TAG has chosen to augment the AWWW with what are known as TAG findings.
+The preparation of findings has in recent years consumed the majority
+of the TAG's time, and findings convey much of the TAG's recent advice
+on architectural matters.
+Most TAG Findings are not on the official 
+W3C <a href="http://www.w3.org/2005/10/Process-20051014/tr.html#Reports">Recommendation track</a>.
+In practice, TAG Findings tend to be in one of two states:
+</p>
+<dl>
+<dt><a href="http://www.w3.org/2001/tag/findings#draft">Draft TAG Finding</a></dt>
+<dd>About all you can say about draft findings in general is that someone in the TAG, at some point, did the experiment of trying to write them up.
+Some of them may be well along and near ready for approval; 
+others may have significant sections that represent consenus of the TAG;
+still others may represent efforts from some TAG member that
+either met with disapproval, or were considered insufficiently important 
+pursue.</dd>
+<dt><a href="http://www.w3.org/2001/tag/findings#approved">Approved</a></dt>
+<dd>Designating a finding as Approved indicates that it had consensus
+of the TAG at the time it was published.</dd>
+</dl>
+<p>
+In general, each finding has a status section indicating not only whether it is approved, but how far along the editor believes it to be.
+It's helpful if status sections include information like:  "this draft was prepared in response to suggestions made at the Feb. 2009 F2F meeting of the TAG", "Chapters 3 &amp; 4 are believed to have consensus of the TAG but others have not been reviewed", or whatever.
+</p>
+<p>There seems to be one finding categorized as "Archival", but the TAG has not used that designation recently.</p>
+<h3 id="editors">The role of the editor</h3>
+<p>
+As with documents produced by other working groups or on the Recommendation track, the editor is just that: the editor not the author.
+The editor's job is to tell the story as the TAG as a whole wants it told; the TAG is not in general a pulpit from which individual TAG members 
+(to mix metaphors) sell their own stories with the TAG's brand.
+</p>
+<p>
+Editors serve to meet the needs of the TAG.  Often it is helpful to have two
+or occasionally more editors on the same document.
+Indeed, some findings benefit by being passed among editors over time, in part
+because different TAG members bring different insights, and in part
+because some TAG members have particular strengths in writing or editing.
+</p>
+<h3 id="newfindings">Deciding which findings to produce</h3>
+<p>
+There is no one path the TAG takes in reaching a decision to produce a finding, or to produce other documents such as revisions to AWWW.
+In practice, it is common for individual TAG members to propose
+work in a certain area, and it is common for TAG members to prepare
+initial drafts of findings as a means of showing to the TAG and the
+community the sort of messages that they propose to deliver.
+Sometimes, but not always, that same person is appointed to continue
+as editor, perhaps with help from co-editors.
+</p>
+<p>
+It's very important to realize that any editor who devotes significant time to a draft is taking a risk: the TAG cannot be in the position of feeling pressured to publish something just because a lot of time has been spent.
+It's not uncommon for the TAG to abandon work on a finding, or at least to
+put it aside indefinitely, even after lots of work has been done.
+Sometimes the TAG looks back on such efforts as important learning
+exercises, but sometimes the experience has been painful.
+</p>
+<p>
+Some of these pitfalls can be avoided if findings start with small drafts, focussed on one or a few clear goals.
+Certainly, it's important for the TAG to agree on the goals and success criteria for a finding before too much work is devoted to producing lots of drafts.
+Ideally, the TAG could crisply identify goals and messages in advance, and task an editor to produce a finding to deliver just that.
+In practice
+many good findings had their origins in drafts prepared by individual
+TAG members on their own intiative.
+Some well-received findings have undergone significant and repeated
+revisions, as
+early drafts have helped the TAG to better understand what messages
+should be delivered.
+Still, the goal in the end should be for the TAG as a whole to agree on the messages to be delivered, and for the corresponding finding to succinctly deliver just those messages.
+</p>
+
+<h3 id="findingpublish">The mechanics of publishing a finding</h3>
+<p>
+By convention, findings are published in the directory 
+<a href="http://www.w3.org/2001/tag/doc/">http://www.w3.org/2001/tag/doc/</a>.
+Some authors type in HTML directly, but many recent findings have
+been prepared in XML using a variation of the
+<a href="http://www.w3.org/2001/tag/doc/xmlspec.xsl">xmlspec.xsl</a>
+stylesheet.
+In practice the stylesheets often need tailoring to produce things
+like good practice notes, so it's not uncommon for editors to
+prepare specialized stylesheets for particular findings.
+If it's your first time using xmlspec, consult someone who's used it before and/or look at the XML source for a published finding with formatting that you like.
+</p>
+<p>
+Although most Findings are not on the official W3C Recommendation
+track, we try to follow many of the practices that are used
+for significant W3C documents.
+In particular, we assign not just a generic URI for the latest HTML
+version, but also dated URIs for immutable versions of each variant
+that's put out for public review, TAG discussion, etc.
+If XML is used, e.g. with xmlspec.xsl, then we also publish
+dated and undated versions of the XML as well.
+Thus, when releasing a new draft, there may be a need to make
+and check in several copies with different names, to make sure
+that the list of Previous Locations is updated, and that all
+new documents are world-readable.  For example, the final published version of the Metadata in URI finding involved creating or updating resources at the following URIs:
+</p>
+
+
+<table>
+<tr>
+<th width="50%">URI</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td>
+<a href="http://www.w3.org/2001/tag/doc/metaDataInURI-31.html">http://www.w3.org/2001/tag/doc/metaDataInURI-31.html</a>
+</td>
+<td>Always refers to HTML form of the latest version of the finding.  Contents will change if finding is ever edited.
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.w3.org/2001/tag/doc/metaDataInURI-31.">http://www.w3.org/2001/tag/doc/metaDataInURI-31</a>
+</td>
+<td>Always refers to the latest version of the finding.  Contents will change if finding is ever edited.
+If a file with this name is not checked in, the default .htaccess file should redirect to the .html version above.
+This is the URI we would normally provide if someone asked for a reference to the latest version of the finding.
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.w3.org/2001/tag/doc/metaDataInURI-31.xml">http://www.w3.org/2001/tag/doc/metaDataInURI-31.xml</a>
+</td>
+<td>Always refers to XML form of the latest version of the finding.  Contents will change if finding is ever edited.
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.w3.org/2001/tag/doc/metaDataInURI-31-20070102.html">http://www.w3.org/2001/tag/doc/metaDataInURI-31-20070102.html</a>
+</td>
+<td>An immutable copy of the HTML for the version published on 2 January 2007.
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.w3.org/2001/tag/doc/metaDataInURI-31-20070102.xml">http://www.w3.org/2001/tag/doc/metaDataInURI-31-20070102.xml</a>
+</td>
+<td>An immutable copy of the XML for the version published on 2 January 2007.
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.w3.org/2001/tag/doc/metaDataInURI.xsl">http://www.w3.org/2001/tag/doc/metaDataInURI.xsl</a>
+</td>
+<td>The version of xmlspec.xsl that was tailored for formatting this finding.
+</td>
+</tr>
+</table>
+
+
+
+<h2 id="managing">Managing the TAG's Work</h2>
+<p>
+The TAG's work is multifaceted,
+and the group only gets to meet in person a few times a year.
+The TAG has evolved a series of mechanisms and conventions,
+some more effective than others, to manage and coordinate its work.
+</p>
+<h3 id="chair">The chairs and the staff contact</h3>
+<p>
+The TAG has two chairs and a W3C staff contact.
+By charter, the chair is the W3C Director.  
+In practice, day to day management of the TAG is not a good use of
+the director's time, so by long standing convention the director appoints
+a co-chair.
+The current co-chairs are Tim Berners-Lee (director) and Noah Mendelsohn.
+</p>
+<p>
+Like other W3C working groups, the TAG has a staff contact, a member of the W3C team who facilitates coordination between the TAG and the rest of the W3C,
+and who insures that we are aware of and follow the W3C process
+and other rules.
+Traditionally, the staff contact has also been very helpful to the chair in organizing and prioritizing the TAG's work, and for most purposes the TAG considers the staff contact to be a working member of the group.  The current staff contact is Yves Lafon.
+</p>
+<p>
+
+</p>
+<h3 id="issuesactions">TAG Issues, Actions and Products</h3>
+<p>
+To facilitate shared tracking of the state of our work,
+to help the chair keep track of what's happening,
+and to aid in preparation of meeting agendas, the TAG uses
+a particular set of conventions involving Issues and Actions, both
+of what are manged using the <a href="http://www.w3.org/2005/06/tracker/">W3C's Tracker system</a> (see below). Additionally, since 2011, we have introduced a what we call <a href="http://www.w3.org/2001/tag/products/">Product Pages</a>, which track the goals and commitments for each of our major deliverables. Unlike Actions and Issues, which are maintained by Tracker, these Product Pages are maintained manually by those responsible for each "product", and by the chair and staff contact.
+</p>
+<p>
+When the TAG identifies an ongoing concern or responsibility that it
+needs to track or fulfill, it creates a TAG Issue.
+Issues tend to be tracked over an extended period, often for years,
+and are revisited or reopened as appropriate.
+Tracker identifies issues by number, but an <a href="http://www.w3.org/2001/tag/issues.html?type=1">earlier tracking convention</a>
+used during the first few years of TAG work named issues with short names and numbers, as in <a href="http://www.w3.org/2001/tag/issues.html?type=1#whenToUseGet-7">whenToUseGet-7</a>.
+The old list is mostly not updated anymore, but for consistency and as a shorhand for remembering which issue is which, the TAG continues to assign issue names in that form.  Still, Tracker formally knows this only as <a href="http://www.w3.org/2001/tag/group/track/issues/7">ISSUE-7</a>.
+When the TAG believes it has done dealing with an issue, the status is changed from OPEN to CLOSED (but see discussion below of PENDING REVIEW).
+Issues can be reopened as necessary.
+</p>
+<p>
+Actions are opened to track responsibilities assigned to individuals on the TAG.  In principle, the list of <a href="http://www.w3.org/2001/tag/group/track/actions/open">open actions</a> in Tracker should allow the chair to determine
+every ongoing activity that is assigned to one or more individuals on the TAG,
+and when results are expected.
+Actions are numbered, and are referred to in the form ACTION-NNN, where NNN is the action number.
+If there's something you are responsible for delivering on behalf of the TAG, please open an action to track it.
+Please keep up-to-date in tracker the "Due date".
+The Due Date should be the earlier of:
+</p>
+<ol>
+<li>If this is an external commitment with a fixed promised date, then that date.</li>
+<li>If this is an action you've promised to the TAG itself, then the date by which you expect to deliver.  In the case of such internal commitments:  please change the Due Date in Tracker if your plans change.
+If you think others on the TAG or outside will care that your dates are slipping, then send email to www-tag@w3.org or tag@w3.org as appropriate.
+Letting your actions appear overdue causes much more wasted overhead for the chair
+than quietly updating Tracker with new, realistic due dates.  By all means, add a comment in Tracker to explain if necessary.</li>
+</ol>
+<p>
+Reason: when agendas are prepared, the chair consults the list of actions that have either reached their date, are overdue, or are PENDING REVIEW (see below).
+By using the above convention, the chair will be alerted either in the case
+that the TAG is at risk of missing an external commitment, or if 
+some internal activity is due.
+</p>
+<p>
+When you believe you have completed an action, or when you think
+an issue should be closed, make a comment to that effect (possibly by sending
+an email that Tracker will <a href="#tracker">catch automatically</a>),
+but change the status to PENDING REVIEW, not directly to CLOSED.
+PENDING REVIEW tells the chair to confirm with the rest of the TAG that
+they agree to close, at which time someone (perhaps you) will be designated
+to change the status from PENDING REVIEW to CLOSED.
+</p>
+<h3 id="tracker">Automated use of Tracker</h3>
+<p>There are a few automated tools that facilitate keeping Tracker's records
+up-to-date. 
+Most importantly, Tracker will automatically update issue and action
+records to point to emails that pertain to the issue,
+<span style="font-style:italic">but only if references to issues and actions are properly coded into the subject or text body or text attachments of the emails (not in HTML email or HTML attachments!)</span>.  According to instructions for <a href="http://www.w3.org/2005/06/tracker/email">Tracking email</a> in Tracker:
+</p>
+<p class="quote" >
+Tracker subscribes to the Working Group mailing list in order to automatically link all relevant discussion to the appropriate issues and actions. It does this by scanning all the email for keywords.
+
+The keywords can be anywhere in the subject or text of the message. However, the tool only reads the text portions of an email, not HTML or PDF, so make sure you send emails either in plain-text or with an equivalent plain-txt attachment.
+
+If you're mentioning a particular issue simply use the issue identifier, such as "ISSUE-123". The word ISSUE must be in uppercase.
+
+If you're mentioning a particular action simply use the action identifier, such as "ACTION-42". The word ACTION must be in uppercase.</p>
+<p>
+<span style="font-style:italic">The chair urgently requests that you be diligent in putting the proper Tracker references in email, opening actions for every dated activity that we need to track, updating due dates and status fields promptly, etc.</span>
+</p>
+
+<p>
+There is also an IRC "bot" that we use to let Tracker pick through the IRC
+logs of our meeting minutes as they are created.  Please read the 
+<a href="http://www.w3.org/2005/06/tracker/irc">Instructions for using the IRC Trackbot</a>.
+Even if you are not scribing, you can use this tool to help Tracker update
+its records of Issues and Actions.
+Common activities performed using the IRC bot include assigning a new action to a TAG member, querying the status of an action, modifying the due date of an action, etc.  For example, the following would assign an action to me to publish a copy of this document:
+</p>
+<p class="quote">
+ACTION: Noah to publish guide to TAG participation - due 31 December 2011
+</p>
+<p>
+One quirk in this system is that Tracker has particular ideas about what your name is.  The example above works because Tracker knows me as "Noah".
+Trying to remember Tracker's names for TAG members is one of the sports
+we engage in while trying to get our minutes right.
+</p>
+<h3 id="products">TAG Products: Managing long term work and ongoing discussions</h3>
+<p>
+TAG activities range widely in technical scope, and also with respect to number of times that the TAG holds discussion of a particular topic.
+At its meeting in Nov 2010 in Lyon, the TAG agreed to experiment with a more disciplined approach to managing
+topics that result in ongoing work.
+</p>
+
+<p>
+Specifically, the chair may schedule one or two, or in exception cases a few more fact-finding discussions of an area
+without first establishing clear success criteria, or getting agreement on the content, form and time table for deliverables.  
+In general, by the end of the second (non-trivial) discussion, the TAG will either decide to abandon or put aside work in such an area, or else it will agree on success criteria, deliverables, timetables,  etc. as a condition of doing further work.
+The intention is to avoid a mode of working in which the TAG repeatedly establishes new "next steps",
+without having articulated more substantial, longer term goals and schedules.
+</p>
+<p>Furthermore, for such ongoing effort, we establish a separate <em>product</em>, with a page in the directory <a href="http://www.w3.org/2001/tag/products/">http://www.w3.org/2001/tag/products/</a>.
+Since 2011, these product pages have become the most significant tool we
+use track the TAG's long-term goals and commitments, to ensure that
+the work of individual TAG members is well aligned with those goals,
+and to give the W3C and Web communities to watch our priorities as we set
+and change them.
+So that we can be held accountable not only for the eventual dates and deliverables of each project, but also for changes and schedule slips, immutable dated
+versions of each product page are created whenever significant changes are made to a product page, or to the index page. For example <a href="http://www.w3.org/2001/tag/products/index-2011-09-13.html">http://www.w3.org/2001/tag/products/index-2011-09-13.html</a> summarizes the TAG's priorities as they existed going into the <a href="http://www.w3.org/2001/tag/2011/09/13-agenda">13-15 September 2011 TAG F2F in Edinburgh</a>.</p>
+<p>
+These product tracking procedures are guidelines, and the chair may in particular circumstances adapt or ignore them as he/she sees fit.
+</p>
+<h2 id="changelog">Appendix: Change Log</h2>
+<ul>
+<li>3 Feb 2009: Initial published verison (Noah)</li>
+<li>13 January 2010: Added information about telcons and IRC.  Fixed a few typos.  The excuse for doing this now was to record the helpful hint that adminreq@w3.org is the place to go if you need to bump slots on the Zakim standing call. (Noah)</li>
+<li>2 May 2010: Added changes authored by John Kemp to improve tutorials on CVS access</li>
+<li>3 Nov 2010: Added managing long term work section</li>
+<li>16 Nov 2010: Editorial fixes; changed staff contact from Dan Connolly to Yves Lafon.  Info on how to set permissions.</li>
+<li>7 March 2011: Clarified that agendas are published at http://www.w3.org/2001/tag/tag-weekly as well as at dated URIs</li>
+<li>2 Dec 2011: Explain that product pages are now no longer in tracker, and that they have become a key tracking mechanism for the TAG's work.</li>
+</ul>
+<h2 id="plannedchanges">Changes planned for future versions of this document</h2>
+<p>
+There is no ongoing commitment to maintenance of this document, but it seems to be proving useful to current and prospective TAG members.
+Accordingly, the chair is keeping the following list 
+of changes that may be worth making at some point in the future:
+</p>
+<ul>
+<li>Updated scribing guidelines to indicate that one goal of good minutes is to make it possible for the chair to determine unambiguously what the status is of each issue, and action coming out of the discussion, to determine whether interactions with non-TAG groups are going to need attention and if so when, and especially to know what we know about impact on coming meeting agendas.
+Specifically, after each meeting, the chair tends to review the IRC log as a basis for starting to draft the agenda for the next meeting.  So it's essential to know things like "we expect to discuss XXX in 2 weeks" or, "since ACTION YYY has been assigned for one month from now, no further discussion of ISSUE ZZZ need be scheduled until progress is made on that action", etc. (Noah)</li>
+<li>
+Johnk has made the good suggestion that we need more guidance on how to capture logs for running the Booth script.
+</li>
+<li>Jonathan Rees suggests we give guidance on how to write a TAG blog entry</li>
+<li>Larry Masinter expresses the concern that the current version mixes guidelines of lasting value
+with more operational details that will likely change.  He suggests splitting into two documents.  See:  
+<a href="http://www.w3.org/2001/tag/2009/03/03-tagmem-minutes.html#item08">minutes of 3 March 2009 F2F</a></li>
+<li>Explain [Trivial] action convention.  Actions marked this way require no review from the TAG before moving from PENDING to CLOSED.</li>
+<li>Explain TAG participation in ac-forum list per <a href="http://www.w3.org/2009/06/ac-forum-pol.html">http://www.w3.org/2009/06/ac-forum-pol.html</a></li>
+</ul>
+
+<p>
+&nbsp;&nbsp;&nbsp;    <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml10"
+        alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+
+&nbsp;&nbsp;&nbsp;
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+       
+
+</p>
+
+</body>
+</html>
+
