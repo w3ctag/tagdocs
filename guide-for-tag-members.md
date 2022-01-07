@@ -28,7 +28,6 @@ To achieve that, the TAG produce several kinds of work, as outlined below:
 As the TAG have an overview of all the technologies produced at W3C, through its design reviews(#design-reviews), it is in a perfect position to identify possible mismatches and deeper architectural issues. 
 The TAG is also reviewing specifications coming from other organisations, like IETF, TC39 or WhatWG when requested.
 
-
 ## What we produce 
 
 ### Design reviews
@@ -48,8 +47,6 @@ We tend to look for issues like:
 * Whether we see pitfalls that we’ve experienced before, and can provide advice to help the spec author avoid them
 * Whether any of our guides or documents might help them
 
-
-
 ### Findings
 
 When we want to make a statement on a particular topical issue, or a trend that we see, we produce a finding. 
@@ -64,12 +61,10 @@ These often come from trends we identify through our design reviews.
 
 Examples include our [Promises Guide](https://www.w3.org/2001/tag/doc/promises-guide).
 
-
 ### Blog posts, notes and other publications
 
 We have these additional methods of publishing our work, which we use from time to time. 
 We occasionally describe findings in plain language with a blog post, like [this one introducing our finding on AMP and distributed/syndicated content](https://www.w3.org/blog/TAG/2017/07/27/distributed-and-syndicated-content-whats-wrong-with-this-picture/), and we have created W3C notes especially in collaboration with working groups, like the [Security and Privacy Questionnaire](https://www.w3.org/TR/security-privacy-questionnaire/).
-
 
 ## How we work
 
@@ -104,13 +99,13 @@ The minutes document is also one document for the entire week.
 
 These breakouts are minuted in the minutes document for the week.
 
-* Breakout A - webRTC video meeting (`5pm Mon UTC`) - for **US** and **Europe**-based TAG members
-* Breakout B - webRTC video meeting (`11pm Monday UTC`) - for **Asia/Pacific** and **US**-based TAG members
-* Breakout C - webRTC video meeting (`8am Tuesday UTC`) - for **Asia/Pacific** and **Europe**-based TAG members
+* Breakout A - webRTC video meeting (`17:00 Mon UTC`) - for **US** and **Europe**-based TAG members
+* Breakout B - webRTC video meeting (`00:00 Tuesday UTC`) - for **Asia/Pacific** and **US**-based TAG members
+* Breakout C - webRTC video meeting (`09:00 Tuesday UTC`) - for **Asia/Pacific** and **Europe**-based TAG members
 
 Breakout attendees publish a new version of the breakout minutes on Github after each breakout, and link to the published minutes from each issue which was under discussion.
 
-##### 3. Plenary webRTC video meeting (`9pm Wednesday UTC`) - for all TAG members
+##### 3. Plenary webRTC video meeting (Rotating between `16:00 Wednesday UTC` and `07:00 Thursday UTC`) - for all TAG members
 
 To share readouts of each breakout, identify further discussion or reach consensus and finish/close the issue.
 
@@ -144,13 +139,13 @@ The minutes document is also one document for the entire week.
 
 These breakouts are minuted in the minutes document for the week.
 
-* Breakout A - webRTC video meeting (`5pm Mon UTC`) - for **US** and **Europe**-based TAG members
-* Breakout B - webRTC video meeting (`11pm Monday UTC`) - for **Asia/Pacific** and **US**-based TAG members
-* Breakout C - webRTC video meeting (`8am Tuesday UTC`) - for **Asia/Pacific** and **Europe**-based TAG members
+* Breakout A - webRTC video meeting (`17:00 Mon UTC`) - for **US** and **Europe**-based TAG members
+* Breakout B - webRTC video meeting (`00:00 Tuesday UTC`) - for **Asia/Pacific** and **US**-based TAG members
+* Breakout C - webRTC video meeting (`09:00 Tuesday UTC`) - for **Asia/Pacific** and **Europe**-based TAG members
 
 Breakout attendees publish a new version of the breakout minutes on Github after each breakout, and link to the published minutes from each issue which was under discussion.
 
-##### 3. Plenary webRTC video meeting (`9pm Wednesday UTC`) - for all TAG members
+##### 3. Plenary webRTC video meeting (Rotating between `16:00 Wednesday UTC` and `07:00 Thursday UTC`) - for all TAG members
 
 To share readouts of each breakout, identify further discussion or reach consensus and finish/close the issue.
 
@@ -172,12 +167,16 @@ Each of us should allocate some time (at least three hours beyond the meeting ti
 
 ### Face-to-face (F2F) meetings
 
-Every quarter, we meet face-to-face for three days to work together. 
+NB: During the pandemic we have organized virtual F2F meetings. These consist of 18 Breakout session slots organized over 3 time zone groups. We generally spend the week before the virtual F2F organizing the agenda by allocating open issues (including design reviews and open issues on TAG documents) into each breakout session. TAG members are expected to attend the sessions relevant for theit time zones. We also maintain a spreadsheet of availability.
+
+Our normal procedure is: Every quarter, we meet face-to-face for three days to work together. 
 We create the agenda for that time at the beginning of the meeting.
 
 We try to alternate continents, to even out the travel for TAG members.
 
 We often host events with the local web community, either in one of the evenings or in the day before or after our meeting.
+
+As of January 2022 it's unclear what the new cadence of F2F meetings will be. It's possible that it will become a mix of "real" and "virtual" F2Fs.
 
 ### Participating in TPAC
 
